@@ -4,7 +4,7 @@ from urllib.request import urlopen
 gdzie = input("Podaj lokalizacje:")
 
 
-with urlopen(f"https://www.metaweather.com/api/location/search/?query={gdzie}") as file:
+with urlopen(f"https://www.metaweather.com/api/location/search/?query={Wa}") as file:
     data = json.loads(file.read().decode("utf-8"))
 
 woeid = data[0]["woeid"]
